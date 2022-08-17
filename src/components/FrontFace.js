@@ -4,7 +4,7 @@ const FrontFace = ({ data }) => {
         <div className="front">
             <div className="backdrop-img"></div>
             <div className="img-container main-img portrait">
-                <img src="./portrait.jpg" className="main-img" />
+                <img src="./portrait.jpg" className="main-img" alt="" />
             </div>
             <div className="bioInfo">
                 <div className="dataNamePronouns">

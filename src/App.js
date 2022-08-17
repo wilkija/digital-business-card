@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [data, setData] = useState(BIO_DATA);
+  const [data] = useState(BIO_DATA);
   return (
     <div className="App">
       <Main className="container" data={data}></Main>
