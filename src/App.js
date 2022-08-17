@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import Main from './components/Main';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [data, setData] = useState(BIO_DATA);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main className="container" data={data}></Main>
     </div>
   );
 }
+
+const BIO_DATA = {
+  name: 'JACOB WILKINSON',
+  pronouns: '(he/him)',
+  title: 'Full Stack Software Engineer',
+  tech: 'Node | JavaScript | React | MongoDB',
+  email: 'wilkija@gmail.com',
+  linkedIn: 'linkedin.com/in/j-wilkinson/',
+  portfolio: 'jacobwilkinson.netlify.app/'
+};
 
 export default App;
