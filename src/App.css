@@ -112,7 +112,6 @@ h1 {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 500ms;
-  cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
   -webkit-transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));;
 }
@@ -147,6 +146,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: 100
 }
 
 .front {
@@ -169,6 +169,11 @@ h1 {
   height: 2em;
   position: relative;
   color: #49bf9d;
+}
+
+.data a {
+  color: #49bf9d;
+  cursor: pointer;
 }
 
 .dataName {
@@ -210,7 +215,7 @@ h1 {
   z-index: 1;
   border-radius: 100%;
   color: #fff;
-
+  cursor: pointer;
 }
 
 .flipButton svg {
