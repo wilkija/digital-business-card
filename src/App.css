@@ -60,6 +60,7 @@ h1 {
   background-image: url(https://source.unsplash.com/292K4qcvXSQ);
   background-size: 100% 100%;
   border-radius: .8rem .8rem 0 0;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, .3);
 }
 
 .main-img{
@@ -108,7 +109,6 @@ h1 {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
   background-color: white;
   position: relative;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 500ms;
@@ -174,6 +174,7 @@ h1 {
 .data a {
   color: #49bf9d;
   cursor: pointer;
+  /* text-shadow: 0.25px 0.25px 1px #000000; */
 }
 
 .dataName {
@@ -201,8 +202,8 @@ h1 {
 
 .flipButton {
   position: fixed;
-  right: 3em;
-  top: 3em;
+  right: 4em;
+  top: 4.5em;
   max-height: 52px;
   background-color: #49bf9d;
   display: flex;
@@ -212,7 +213,7 @@ h1 {
   padding: 10;
   width: 50px;
   height: 50px;
-  z-index: 1;
+  z-index: 100;
   border-radius: 100%;
   color: #fff;
   cursor: pointer;
